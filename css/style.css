@@ -1,0 +1,85 @@
+html, body{
+    padding: 0;
+    margin: 0;
+
+}
+
+body{
+    background: #000;
+    color: #fff;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen,Ubuntu,Cantarell,"Fira Sans","Droid Sans","Helvetica Neue",sans-serif;
+}
+
+#main-header{
+    height: 60px;
+    background-color: #2b2424;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 0 20px;
+}
+
+#main-header h1{
+    margin: 0;
+}
+
+#main-header img{
+    width: 40px;
+    height: 40px;
+}
+
+#main-header .wrapper{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    height: 60px;
+}
+
+#main-header span{
+    color: #4a91fc;
+}
+
+#main-header button{
+    margin: 0 0 0 auto;
+    background: none;
+    color: #4a91fc;
+    border: 1px solid #4a91fc;
+    font-size: 1.2rem;
+    border-radius: 5px;
+}
+
+#main-header button:hover{
+    background: black;
+    cursor: pointer;
+}
+
+.wrapper{
+    width: 900px;
+    margin: 0 auto; /*centraliza*/
+}
+
+.modal{
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: #332d2d50; /*alfa: 50% de opacidade*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal .modal-content{
+    width: 400px;
+    min-width: 300px;
+    min-height: 200px;
+    background: #292525;
+    border-radius: 20px;
+    padding: 20px;
+}
+
+.modal .modal-content h1{
+    margin: 0;
+}
+
