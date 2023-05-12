@@ -65,7 +65,7 @@ body{
     bottom: 0;
     right: 0;
     background: #332d2d50; /*alfa: 50% de opacidade*/
-    display: flex;
+    display: none;
     justify-content: center;
     align-items: center;
 }
@@ -73,13 +73,51 @@ body{
 .modal .modal-content{
     width: 400px;
     min-width: 300px;
-    min-height: 200px;
+    min-height: 100px;
     background: #292525;
     border-radius: 20px;
     padding: 20px;
+    position: relative; /*isso pra colocar outro elemento dentro dele*/
 }
 
 .modal .modal-content h1{
     margin: 0;
 }
 
+.modal .modal-content button.btn-close{
+    position: absolute;
+    top: 0px;
+    right: 10px;
+    font-size: 20px;
+    border: none;
+    background: none;
+    color: white;
+    font-family: cursive;
+    padding: 10px;
+    cursor: pointer;
+}
+
+#add-stock form{
+    margin: 20px 0 0 0;
+}
+
+#tickers-list{
+    display: flex;
+    gap: 30px;
+    padding: 20px;
+}
+
+#tickers-list .ticker{
+    background: #584f4f;
+    padding: 20px;
+    border-radius: 15px;
+    width: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#tickers-list .ticker h2{
+    margin-top: 0;
+}
